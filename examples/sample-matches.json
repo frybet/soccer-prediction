@@ -1,0 +1,31 @@
+[
+  {
+    "home_team": "North FC",
+    "away_team": "South United",
+    "home_goals": 2,
+    "away_goals": 1,
+    "played_at": "2026-03-20T19:00:00Z",
+    "status": "played"
+  },
+  {
+    "home_team": "West City",
+    "away_team": "North FC",
+    "home_goals": 0,
+    "away_goals": 0,
+    "played_at": "2026-03-12T18:00:00+00:00",
+    "status": "played"
+  },
+  {
+    "home_team": "North FC",
+    "away_team": "East Rovers",
+    "home_goals": 1,
+    "away_goals": 3,
+    "played_at": "2026-03-01T15:00:00Z",
+    "status": "played"
+  },
+  {
+    "home_team": "North FC",
+    "away_team": "East Rovers",
+    "status": "scheduled"
+  }
+]

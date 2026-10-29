@@ -1,0 +1,25 @@
+{
+  "name": "frybet/soccer-prediction",
+  "description": "Standalone football statistics and transparent probability models for PHP.",
+  "type": "library",
+  "license": "MIT",
+  "require": {
+    "php": "^8.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.6 || ^10.5 || ^11.5 || ^12.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Frybet\\SoccerPrediction\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Frybet\\SoccerPrediction\\Tests\\": "tests/"
+    }
+  },
+  "scripts": {
+    "test": "@php vendor/phpunit/phpunit/phpunit"
+  }
+}

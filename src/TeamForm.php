@@ -55,7 +55,8 @@ final class TeamForm
                 throw new InvalidArgumentException('played_at has an invalid timezone offset.');
             }
             $parsed = DateTimeImmutable::createFromFormat('!Y-m-d\\TH:i:sP', $date);
-            if ($parsed === false || DateTimeImmutable::getLastErrors() !== false) {
+            $errors = DateTimeImmutable::getLastErrors();
+            if ($parsed === false || ($errors !== false && ($errors['warning_count'] > 0 || $errors['error_count'] > 0))) {
                 throw new InvalidArgumentException('played_at must contain a valid date and time.');
             }
             $eligible[] = [
